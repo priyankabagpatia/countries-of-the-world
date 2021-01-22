@@ -1,0 +1,44 @@
+.card {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  height: 350px;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+.card__image {
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card__body {
+  padding: 20px;
+}
+
+.item__title {
+  font-weight: 600;
+}
+
+.body__title {
+  margin: 0 0 10px 0;
+}
+
+.body__item {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card:hover {
+    transform: none;
+  }
+}
